@@ -1,13 +1,15 @@
 <template>
   <div>
-    <router-link v-for='item in items'
-                 :to = '{ name: "Item", params: { id: item.id }}'
-                 append
-                 :key = 'item.id'
-    >
-      <img :src='item.attributes.posterImage.small'>
-    </router-link>
-    <router-view></router-view>
+    <font-awesome-icon icon="spinner" size="6x" spin v-if = 'items.length === 0'/>
+    <template v-else>
+      <router-link v-for='item in items'
+                   :to = '{ name: "Item", params: { id: item.id }}'
+                   append
+                   :key = 'item.id'
+      >
+        <img :src='item.attributes.posterImage.small'>
+      </router-link>
+    </template>
   </div>
 </template>
 

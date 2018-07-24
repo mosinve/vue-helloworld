@@ -11,6 +11,7 @@
         </tbody>
       </table>
     </article>
+    <font-awesome-icon icon="spinner" size="6x" spin v-else/>
   </div>
 </template>
 
