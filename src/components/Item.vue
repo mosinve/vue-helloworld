@@ -15,9 +15,6 @@
             td {{ item.attributes.synopsis }}
   .text-center(v-else)
     font-awesome-icon( icon="spinner" size="6x" spin)
-    </div>
-
-  </div>
 </template>
 
 <script>
